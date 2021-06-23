@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { getMovies } from "../../actions";
 import { addMovieFavourite } from "../../actions";
-import styles from "./search.module.css";
+import styles from "./searchBar.module.css";
 
-export class Buscador extends Component {
+export class SearchBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -24,24 +24,23 @@ export class Buscador extends Component {
         const { title } = this.state;
         return (
             <div>
-                <h2>Search a movie</h2>
                 <form
                     className={styles.formContainer}
                     onSubmit={(e) => this.handleSubmit(e)}
                 >
-                    <div>
-                        <label className={styles.formLabel} htmlFor="title">
-                            Movie:
-                        </label>
-                        <input
-                            type="text"
-                            id="title"
-                            autoComplete="off"
-                            value={title}
-                            onChange={(e) => this.handleChange(e)}
-                        />
-                    </div>
-                    <button type="submit">Search</button>
+                    <h2 className={styles.searchBarText}>Search a movie</h2>
+
+                    <input
+                        className={styles.searchBarInput}
+                        placeholder="Type your movie here..."
+                        type="text"
+                        value={title}
+                        onChange={(e) => this.handleChange(e)}
+                    />
+
+                    <button type="submit" className={styles.searchBarButton}>
+                        Search
+                    </button>
                 </form>
                 <ul>
                     {this.props.movies &&
@@ -81,4 +80,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Buscador);
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

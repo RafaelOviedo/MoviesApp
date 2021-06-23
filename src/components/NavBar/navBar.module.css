@@ -3,13 +3,32 @@
     top: 0;
     width: 100%;
     height: 10vh;
-    background: lightgray;
+    background: black;
+}
+
+.arrowButton {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-weight: bold;
+    font-size: large;
+}
+.arrowButton:hover {
+    color: gray;
+}
+.arrowButton {
+    color: black;
+}
+.arrowButton {
+    color: white;
+    text-decoration: none;
 }
 
 .navbarLogo {
+    color: white;
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 15%;
     font-weight: bold;
     font-size: large;
 }
@@ -28,9 +47,9 @@
     list-style-type: none;
 }
 .listItem:hover {
-    color: white;
+    color: gray;
 }
 .listItem {
-    color: black;
+    color: white;
     text-decoration: none;
 }

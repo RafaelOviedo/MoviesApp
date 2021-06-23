@@ -1,0 +1,68 @@
+.landingPageComponent {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://www.cined.com/content/uploads/2020/05/Frames-Hell-BTS-on-Set.jpg");
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcomeTextBox {
+    text-align: center;
+    word-spacing: 1px;
+    line-height: 40px;
+    position: absolute;
+    top: 40vh;
+    left: 9.5%;
+    width: 50%;
+    height: 20%;
+}
+
+.welcomeText {
+    font-size: 150%;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landingButton {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 39vh;
+    left: 29%;
+    border-radius: 35px 0px 35px 0;
+    cursor: pointer;
+    background: #e5e5e5;
+    font-size: large;
+    border: none;
+}
+.landingButton:active {
+    background: #ffe2e2;
+}
+.landingButton:hover {
+    background: lightgray;
+}
+.landingButton a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.textAndButtonBox {
+    position: absolute;
+    top: 10vh;
+    left: 70%;
+    background: black;
+    width: 30%;
+    height: 90vh;
+}
+
+.rightBoxText {
+    font-size: 150%;
+    font-weight: bold;
+    color: #e5e5e5;
+    position: absolute;
+    top: 25vh;
+    left: 6.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
