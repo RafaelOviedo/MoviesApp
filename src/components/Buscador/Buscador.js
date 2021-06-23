@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { getMovies } from "../../actions";
 import { addMovieFavourite } from "../../actions";
-import "./Buscador.css";
+import styles from "./Buscador.module.css";
 
 export class Buscador extends Component {
     constructor(props) {
@@ -24,14 +24,14 @@ export class Buscador extends Component {
         const { title } = this.state;
         return (
             <div>
-                <h2>Buscador</h2>
+                <h2>Search a movie</h2>
                 <form
-                    className="form-container"
+                    className={styles.formContainer}
                     onSubmit={(e) => this.handleSubmit(e)}
                 >
                     <div>
-                        <label className="label" htmlFor="title">
-                            Película:{" "}
+                        <label className={styles.formLabel} htmlFor="title">
+                            Movie:
                         </label>
                         <input
                             type="text"
@@ -41,7 +41,7 @@ export class Buscador extends Component {
                             onChange={(e) => this.handleChange(e)}
                         />
                     </div>
-                    <button type="submit">BUSCAR</button>
+                    <button type="submit">Search</button>
                 </form>
                 <ul>
                     {this.props.movies &&
