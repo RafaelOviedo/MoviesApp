@@ -1,32 +1,24 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import Logo from "../../logoHenry.png";
-
-import "./Navbar.css";
+import { Link } from "react-router-dom";
+import styles from "./navBar.module.css";
 
 export default function NavBar() {
     return (
-        <header className="navbar">
-            <div>
-                <img
-                    id="logoHenry"
-                    src={Logo}
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                    alt=""
-                />
-            </div>
-            <nav>
-                <ul className="list">
-                    <li className="list-item">
-                        <NavLink exact to="/">
-                            Home
-                        </NavLink>
-                        <NavLink to="/favs">Favoritas</NavLink>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <nav className={styles.navBarContainer}>
+            <div className={styles.navbarLogo}>MOVIE APP</div>
+            <ul className={styles.navbarList}>
+                <Link exact to="/" className={styles.listItem}>
+                    Home
+                </Link>
+
+                <Link to="/favs" className={styles.listItem}>
+                    Favoritas
+                </Link>
+
+                <Link to="/about" className={styles.listItem}>
+                    About
+                </Link>
+            </ul>
+        </nav>
     );
 }

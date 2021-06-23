@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { getMovies } from "../../actions";
 import { addMovieFavourite } from "../../actions";
-import styles from "./Buscador.module.css";
+import styles from "./search.module.css";
 
 export class Buscador extends Component {
     constructor(props) {
