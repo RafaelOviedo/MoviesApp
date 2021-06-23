@@ -17,7 +17,7 @@ export class SearchBar extends Component {
     }
     handleSubmit(event) {
         event.preventDefault();
-        this.props.getMovies(this.state.title); //revisar
+        this.props.getMovies(this.state.title);
     }
 
     render() {
@@ -42,13 +42,27 @@ export class SearchBar extends Component {
                         Search
                     </button>
                 </form>
-                <ul>
+                <ul className={styles.movieCardsContainer}>
                     {this.props.movies &&
                         this.props.movies.map((movie) => (
-                            <div key={movie.imdbID}>
-                                <Link to={`/movie/${movie.imdbID}`}>
-                                    {movie.Title}
+                            <div
+                                key={movie.imdbID}
+                                className={styles.movieCard}
+                            >
+                                <p className={styles.movieTitle}>
+                                    Name: {movie.Title}
+                                </p>
+
+                                <p className={styles.movieDate}>
+                                    Release date: {movie.Year}
+                                </p>
+                                <Link
+                                    to={`/movie/${movie.imdbID}`}
+                                    className={styles.moreInfoLink}
+                                >
+                                    More info
                                 </Link>
+
                                 <button
                                     onClick={() =>
                                         this.props.addMovieFavourite({
@@ -56,8 +70,9 @@ export class SearchBar extends Component {
                                             id: movie.imdbID,
                                         })
                                     }
+                                    className={styles.movieButton}
                                 >
-                                    Favourite
+                                    Add to Favourite
                                 </button>
                             </div>
                         ))}

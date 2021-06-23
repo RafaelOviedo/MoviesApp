@@ -1,3 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://lh6.googleusercontent.com/proxy/m5fQ-NSQRLCtB2jKnlSgxMrz8dMhsi0BPxQBtnKj5PnEd1ZqRZ3x_mxNDugLt-bc7y6to8NlI6jPc7GEUyLEfWwFvyZXsS10tlzdv9I6JdUb7NWJ6LQ=s0-d");
+}
+
 .formContainer {
     display: flex;
     flex-direction: column;
@@ -7,6 +17,10 @@
     position: absolute;
     top: 10%;
     left: 40%;
+}
+
+.searchBarText {
+    color: white;
 }
 
 .searchBarInput {
@@ -25,4 +39,58 @@
     border: none;
     width: 40%;
     height: 20%;
+}
+
+.movieCard {
+    width: 95%;
+    height: 20vh;
+    position: relative;
+    top: 35vh;
+    border: 2px solid silver;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 2%;
+}
+
+.movieTitle {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.movieDate {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.moreInfoLink {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    color: red;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.movieButton {
+    font-size: large;
+    position: absolute;
+    top: 25%;
+    left: 76%;
+    background: black;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    width: 20%;
+    height: 50%;
+    cursor: pointer;
 }
