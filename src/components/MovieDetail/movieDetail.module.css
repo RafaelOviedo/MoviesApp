@@ -1,0 +1,7 @@
+.movieDetailContainer {
+    background: tomato;
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+}

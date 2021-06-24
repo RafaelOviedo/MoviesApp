@@ -1,8 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getMovieDetail } from "../../actions/index";
-
-import "./Movie.css";
+import styles from "./movieDetail.module.css";
 
 class Movie extends React.Component {
     componentDidMount() {
@@ -13,9 +12,11 @@ class Movie extends React.Component {
     render() {
         return (
             <div>
-                <div className="movie-detail">Detalle de la pelicula</div>
-                <h2>{this.props.movie.Title}</h2>
-                <img src={this.props.movie.Poster} alt="movie art" />
+                <div className={styles.movieDetailContainer}>
+                    <div>Detalle de la pelicula</div>
+                    <h2>{this.props.movie.Title}</h2>
+                    <img src={this.props.movie.Poster} alt="movie art" />
+                </div>
             </div>
         );
     }

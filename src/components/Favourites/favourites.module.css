@@ -1,0 +1,58 @@
+.favouriteTitle {
+    position: absolute;
+    left: 42.5%;
+    top: 15%;
+    color: white;
+    margin: 0;
+}
+
+.favouriteList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.favouriteCard {
+    width: 95%;
+    height: 10vh;
+    position: relative;
+    top: 20vh;
+    border: 2px solid silver;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 2%;
+}
+
+.movieTitle {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.moreInfoLink {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: red;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.movieButton {
+    font-size: medium;
+    position: absolute;
+    top: 25%;
+    left: 80%;
+    background: black;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    width: 15%;
+    height: 50%;
+    cursor: pointer;
+}
