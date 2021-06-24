@@ -27,7 +27,8 @@ body {
     width: 90%;
     height: 3vh;
     border-radius: 15px 15px 15px 15px;
-    border: 2px solid lightgray;
+    border: 2px solid gray;
+    outline: none;
 }
 
 .searchBarButton {

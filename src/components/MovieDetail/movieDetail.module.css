@@ -1,7 +1,122 @@
 .movieDetailContainer {
-    background: tomato;
-    width: 400px;
-    height: 40px;
+    width: 100%;
+    height: 100vh;
+}
+
+.detailComponentTitle {
+    position: absolute;
+    top: 12.5%;
+    left: 42.5%;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.movieDetailCard {
+    width: 70%;
+    height: 75vh;
+    position: relative;
+    top: 19vh;
+    left: 13.5%;
+    border: 2px solid silver;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 2%;
+}
+
+.movieTitle {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.movieRelease {
     position: absolute;
     top: 20%;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.movieGenre {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.plotBox {
+    width: 55%;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+}
+.moviePlot {
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.movieRating {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.movieRuntime {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.movieLanguage {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.movieCountry {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.movieImage {
+    position: absolute;
+    top: 10%;
+    left: 66%;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.detailLoading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: xx-large;
 }

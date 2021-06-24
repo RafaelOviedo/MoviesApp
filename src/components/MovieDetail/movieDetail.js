@@ -11,11 +11,40 @@ class Movie extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className={styles.movieDetailContainer}>
-                    <div>Detalle de la pelicula</div>
-                    <h2>{this.props.movie.Title}</h2>
-                    <img src={this.props.movie.Poster} alt="movie art" />
+            <div className={styles.movieDetailContainer}>
+                <div className={styles.detailComponentTitle}>Movie Detail</div>
+                <div className={styles.movieDetailCard}>
+                    <h2 className={styles.movieTitle}>
+                        Title: {this.props.movie.Title}
+                    </h2>
+                    <p className={styles.movieRelease}>
+                        Release date: {this.props.movie.Release}
+                    </p>
+                    <p className={styles.movieGenre}>
+                        Genre: {this.props.movie.Genre}
+                    </p>
+                    <div className={styles.plotBox}>
+                        <p className={styles.moviePlot}>
+                            Plot: {this.props.movie.Plot}
+                        </p>
+                    </div>
+                    <p className={styles.movieRating}>
+                        Rating: {this.props.movie.imdbRating}
+                    </p>
+                    <p className={styles.movieRuntime}>
+                        Runtime: {this.props.movie.Runtime}
+                    </p>
+                    <p className={styles.movieLanguage}>
+                        Laguage: {this.props.movie.Language}
+                    </p>
+                    <p className={styles.movieCountry}>
+                        Country: {this.props.movie.Country}
+                    </p>
+                    <img
+                        src={this.props.movie.Poster}
+                        alt="Movie Poster"
+                        className={styles.movieImage}
+                    />
                 </div>
             </div>
         );
