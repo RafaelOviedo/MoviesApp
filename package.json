@@ -1,6 +1,7 @@
 {
     "name": "12-react-redux",
     "version": "1.0.0",
+    "private": "true",
     "dependencies": {
         "@testing-library/jest-dom": "^5.11.10",
         "@testing-library/react": "^11.2.6",
@@ -35,5 +36,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "dotenv": "^10.0.0"
     }
 }
