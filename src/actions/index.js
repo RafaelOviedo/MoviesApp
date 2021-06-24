@@ -1,4 +1,3 @@
-console.log(process.env);
 export function getMovies(titulo) {
     return function (dispatch) {
         return fetch(
