@@ -18,7 +18,7 @@ class Movie extends React.Component {
                         Title: {this.props.movie.Title}
                     </h2>
                     <p className={styles.movieRelease}>
-                        Release date: {this.props.movie.Release}
+                        Release date: {this.props.movie.Released}
                     </p>
                     <p className={styles.movieGenre}>
                         Genre: {this.props.movie.Genre}
