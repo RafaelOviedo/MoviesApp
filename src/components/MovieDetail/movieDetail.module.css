@@ -107,10 +107,12 @@
     text-decoration: none;
 }
 
-.movieImage {
+.movieImage img {
+    width: 28%;
+    height: 80%;
     position: absolute;
-    top: 10%;
-    left: 66%;
+    top: 8.5%;
+    left: 67%;
     border-radius: 25px 25px 25px 25px;
 }
 

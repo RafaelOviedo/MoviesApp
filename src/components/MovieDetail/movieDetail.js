@@ -40,11 +40,9 @@ class Movie extends React.Component {
                     <p className={styles.movieCountry}>
                         Country: {this.props.movie.Country}
                     </p>
-                    <img
-                        src={this.props.movie.Poster}
-                        alt="Movie Poster"
-                        className={styles.movieImage}
-                    />
+                    <div className={styles.movieImage}>
+                        <img src={this.props.movie.Poster} alt="Movie Poster" />
+                    </div>
                 </div>
             </div>
         );
