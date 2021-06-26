@@ -1,0 +1,55 @@
+.aboutComponent {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.aboutTitle {
+    position: absolute;
+    left: 42.5%;
+    top: 12.5%;
+    color: white;
+    margin: 0;
+}
+
+.textBox {
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    width: 90%;
+    height: 20%;
+}
+
+.aboutText {
+    color: white;
+    line-height: 150%;
+    font-size: larger;
+}
+
+.socialMediaText {
+    position: absolute;
+    top: 50vh;
+    left: 8%;
+    color: white;
+    font-size: large;
+}
+
+.githubIcon {
+    position: absolute;
+    top: 60vh;
+    left: 5%;
+    width: 6%;
+    height: 55%;
+    background: white;
+    border-radius: 50%;
+}
+
+.linkedinIcon {
+    position: absolute;
+    top: 60vh;
+    left: 16%;
+    width: 6%;
+    height: 55%;
+    background: white;
+    border-radius: 50%;
+}

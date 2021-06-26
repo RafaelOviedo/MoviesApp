@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar/navBar";
 import { Route } from "react-router-dom";
 import Movie from "./components/MovieDetail/movieDetail";
 import LandingPage from "./components/LandingPage/landingPage";
+import About from "./components/About/about";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Route exact path="/home" component={HomePage} />
             <Route path="/favs" component={Favourites} />
             <Route path="/movie/:id" component={Movie} />
+            <Route path="/about" component={About} />
         </React.Fragment>
     );
 }
