@@ -43,7 +43,7 @@
     text-decoration: none;
 }
 
-.movieButton {
+.removeButton {
     font-size: medium;
     position: absolute;
     top: 25%;
@@ -55,4 +55,7 @@
     width: 15%;
     height: 50%;
     cursor: pointer;
+}
+.removeButton:hover {
+    background: #1c1c1c;
 }

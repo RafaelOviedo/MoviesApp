@@ -12,9 +12,11 @@ export class SearchBar extends Component {
             title: "",
         };
     }
+
     handleChange(event) {
         this.setState({ title: event.target.value });
     }
+
     handleSubmit(event) {
         event.preventDefault();
         this.props.getMovies(this.state.title);
@@ -42,6 +44,7 @@ export class SearchBar extends Component {
                         Search
                     </button>
                 </form>
+
                 <ul className={styles.movieCardsContainer}>
                     {this.props.movies &&
                         this.props.movies.map((movie) => (

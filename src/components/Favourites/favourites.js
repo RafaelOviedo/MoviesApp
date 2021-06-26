@@ -32,7 +32,7 @@ export class Favourites extends Component {
                                     onClick={() =>
                                         this.props.removeMovie(movie.id)
                                     }
-                                    className={styles.movieButton}
+                                    className={styles.removeButton}
                                 >
                                     Remove
                                 </button>

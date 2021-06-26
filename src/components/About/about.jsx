@@ -33,7 +33,11 @@ export class About extends Component {
 
                     <h3 className={styles.socialMediaText}>My Social Media</h3>
 
-                    <a href="https://github.com/RafaelOviedo" target="_blank">
+                    <a
+                        href="https://github.com/RafaelOviedo"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         <img
                             className={styles.githubIcon}
                             src="https://pngimg.com/uploads/github/github_PNG58.png"
@@ -43,6 +47,7 @@ export class About extends Component {
                     <a
                         href="https://www.linkedin.com/in/rafael-oviedo/?locale=en_US"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <img
                             className={styles.linkedinIcon}

@@ -43,6 +43,9 @@
     background: white;
     border-radius: 50%;
 }
+.githubIcon:hover {
+    background: lightgray;
+}
 
 .linkedinIcon {
     position: absolute;
@@ -52,4 +55,7 @@
     height: 55%;
     background: white;
     border-radius: 50%;
+}
+.linkedinIcon:hover {
+    background: lightgray;
 }

@@ -4,6 +4,13 @@ import { getMovieDetail } from "../../actions/index";
 import styles from "./movieDetail.module.css";
 
 class Movie extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            loading: true,
+        };
+    }
+
     componentDidMount() {
         const movieID = this.props.match.params.id;
         this.props.getMovieDetail(movieID);
