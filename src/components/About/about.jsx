@@ -9,7 +9,7 @@ export class About extends Component {
 
                 <div className={styles.textBox}>
                     <p className={styles.aboutText}>
-                        This app was created in the HENRY bootcamp. Tha main
+                        This app was created in the HENRY bootcamp. The main
                         purpose was to achieve the understanding of the workflow
                         with React-Redux.
                         <br />

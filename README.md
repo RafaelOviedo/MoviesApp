@@ -1,6 +1,6 @@
 This app was created in the HENRY bootcamp.
 
-Tha main purpose was to achieve the understanding of the workflow with React-Redux.
+The main purpose was to achieve the understanding of the workflow with React-Redux.
 
 In this App you can:
 
