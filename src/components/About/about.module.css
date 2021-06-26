@@ -28,16 +28,16 @@
 
 .socialMediaText {
     position: absolute;
-    top: 50vh;
-    left: 8%;
+    top: 45vh;
+    left: 73%;
     color: white;
     font-size: large;
 }
 
 .githubIcon {
     position: absolute;
-    top: 60vh;
-    left: 5%;
+    top: 55vh;
+    left: 70%;
     width: 6%;
     height: 55%;
     background: white;
@@ -46,8 +46,8 @@
 
 .linkedinIcon {
     position: absolute;
-    top: 60vh;
-    left: 16%;
+    top: 55vh;
+    left: 80%;
     width: 6%;
     height: 55%;
     background: white;
