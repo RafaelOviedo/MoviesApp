@@ -51,7 +51,7 @@ export class About extends Component {
                     >
                         <img
                             className={styles.linkedinIcon}
-                            src="https://cdn.icon-icons.com/icons2/693/PNG/512/LinkedIn_Rounded_Solid_icon-icons.com_61559.png"
+                            src="https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668696_960_720.png"
                             alt="linkedin icon"
                         />
                     </a>
