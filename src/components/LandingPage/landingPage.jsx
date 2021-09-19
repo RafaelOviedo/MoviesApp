@@ -12,7 +12,7 @@ function LandingPage() {
                 </p>
             </div>
             <div className={styles.textAndButtonBox}>
-                <p className={styles.rightBoxText}>
+                <p className={styles.mainText}>
                     To the main page, press the button
                 </p>
 
