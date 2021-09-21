@@ -1,15 +1,35 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import styles from "./navBar.module.css";
+import 'boxicons';
 
 export default function NavBar() {
+    const [toggleButton, setToggleButton] = useState(true);
+    const [width, setWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        if(width > "768") {
+            setToggleButton(false)
+        }
+        console.log(width);
+    }, [width])
+
+    function handleToggle() {
+        setToggleButton(false);
+    };
+
     return (
         <nav className={styles.navBarContainer}>
             <Link to="/" className={styles.arrowButton}>
                 &#10094; Back
             </Link>
             <div className={styles.navbarLogo}>MOVIE APP</div>
-            <ul className={styles.navbarList}>
+            <button className={toggleButton ? styles.menuIcon : styles.notVisible} onClick={() => handleToggle()}>
+                <box-icon name='menu'></box-icon>
+            </button>
+            <ul className={toggleButton ? styles.notVisible : styles.navbarList}>
                 <Link exact to="/home" className={styles.listItem}>
                     Home
                 </Link>
