@@ -1,20 +1,10 @@
-import {React, useState, useEffect} from "react";
+import {React, useState} from "react";
 import { Link } from "react-router-dom";
 import styles from "./navBar.module.css";
 import 'boxicons';
 
 export default function NavBar() {
     const [toggleButton, setToggleButton] = useState(true);
-    const [width, setWidth] = useState(window.innerWidth)
-
-    useEffect(() => {
-        const handleResize = () => setWidth(window.innerWidth);
-        window.addEventListener("resize", handleResize);
-        if(width > "768") {
-            setToggleButton(false)
-        }
-        console.log(width);
-    }, [width])
 
     function handleToggle() {
         setToggleButton(false);
