@@ -59,7 +59,7 @@
 .menuIcon {
     opacity: 0;
 }
-
+/* 
 @media (max-width: 768px) {
     .navbarList {
         background: #000000;
@@ -86,4 +86,4 @@
     .notVisible {
         opacity: 0;
     }
-}
+} */
